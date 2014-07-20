@@ -77,4 +77,8 @@ Pinteresting02::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # requiered for heroku
+  # Note to set this to your actual host 
+config.action_mailer.default_url_options = { :host => 'omr-pinteresting02.com' }
 end
